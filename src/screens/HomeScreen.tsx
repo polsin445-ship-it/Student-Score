@@ -15,6 +15,10 @@ export default function HomeScreen() {
   
   const selectedSubject = GRADE_DATA.find(item => item.id === selectedId) || GRADE_DATA[0];
 
+  const totalCredits = GRADE_DATA.reduce((acc, item) => acc + item.credits, 0);
+  const weightedGrades = GRADE_DATA.reduce((acc, item) => acc + (parseFloat(item.grade) * item.credits), 0);
+  const gpax = (weightedGrades / totalCredits).toFixed(2);
+
   return (
     <div className="max-w-[1140px] mx-auto px-5 pt-8 pb-32">
       {/* Welcome Hero */}
@@ -43,11 +47,11 @@ export default function HomeScreen() {
           <div className="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
           <p className="text-sm font-medium text-secondary mb-4">เกรดเฉลี่ยรวม (GPAX)</p>
           <div className="w-32 h-32 rounded-full border-[8px] border-primary-container flex items-center justify-center mb-4 relative">
-            <span className="text-4xl font-bold text-primary font-display">3.85</span>
+            <span className="text-4xl font-bold text-primary font-display">{gpax}</span>
             <div className="absolute inset-0 rounded-full border-[8px] border-primary border-t-transparent -rotate-45"></div>
           </div>
           <div className="bg-tertiary-container/30 px-4 py-1 rounded-full">
-            <span className="text-xs font-bold text-on-tertiary-container">+0.15 จากเทอมที่แล้ว</span>
+            <span className="text-xs font-bold text-on-tertiary-container">สรุปผลการเรียนเทอมนี้</span>
           </div>
         </motion.div>
 

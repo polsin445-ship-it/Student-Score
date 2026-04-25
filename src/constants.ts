@@ -10,7 +10,8 @@ export const GRADE_DATA = [
     icon: BookOpen,
     color: 'text-orange-500',
     bg: 'bg-orange-50',
-    shortName: 'ไทย'
+    shortName: 'ไทย',
+    credits: 1.5
   },
   { 
     id: 'TH102', 
@@ -21,7 +22,8 @@ export const GRADE_DATA = [
     icon: BookOpen,
     color: 'text-orange-600',
     bg: 'bg-orange-100',
-    shortName: 'ไทยเพิ่ม'
+    shortName: 'ไทยเพิ่ม',
+    credits: 1.0
   },
   { 
     id: 'MA101', 
@@ -32,7 +34,8 @@ export const GRADE_DATA = [
     icon: Sigma,
     color: 'text-blue-500',
     bg: 'bg-blue-50',
-    shortName: 'คณิต'
+    shortName: 'คณิต',
+    credits: 1.5
   },
   { 
     id: 'SC101', 
@@ -43,7 +46,8 @@ export const GRADE_DATA = [
     icon: Beaker,
     color: 'text-purple-500',
     bg: 'bg-purple-50',
-    shortName: 'วิทย์'
+    shortName: 'วิทย์',
+    credits: 1.5
   },
   { 
     id: 'COM101', 
@@ -54,7 +58,8 @@ export const GRADE_DATA = [
     icon: Computer,
     color: 'text-indigo-500',
     bg: 'bg-indigo-50',
-    shortName: 'คอม'
+    shortName: 'คอม',
+    credits: 1.0
   },
   { 
     id: 'SO101', 
@@ -65,7 +70,8 @@ export const GRADE_DATA = [
     icon: Globe,
     color: 'text-emerald-500',
     bg: 'bg-emerald-50',
-    shortName: 'สังคม'
+    shortName: 'สังคม',
+    credits: 1.5
   },
   { 
     id: 'HI101', 
@@ -76,7 +82,8 @@ export const GRADE_DATA = [
     icon: Landmark,
     color: 'text-amber-600',
     bg: 'bg-amber-50',
-    shortName: 'ประวัติ'
+    shortName: 'ประวัติ',
+    credits: 0.5
   },
   { 
     id: 'AC101', 
@@ -87,7 +94,8 @@ export const GRADE_DATA = [
     icon: ShieldCheck,
     color: 'text-red-500',
     bg: 'bg-red-50',
-    shortName: 'ต้านทุจริต'
+    shortName: 'ต้านทุจริต',
+    credits: 0.5
   },
   { 
     id: 'CI101', 
@@ -98,7 +106,8 @@ export const GRADE_DATA = [
     icon: ShieldCheck,
     color: 'text-blue-600',
     bg: 'bg-blue-100',
-    shortName: 'พลเมือง'
+    shortName: 'พลเมือง',
+    credits: 0.5
   },
   { 
     id: 'HE101', 
@@ -109,7 +118,8 @@ export const GRADE_DATA = [
     icon: HeartPulse,
     color: 'text-rose-500',
     bg: 'bg-rose-50',
-    shortName: 'สุขศึกษา'
+    shortName: 'สุขศึกษา',
+    credits: 1.0
   },
   { 
     id: 'AR101', 
@@ -120,7 +130,8 @@ export const GRADE_DATA = [
     icon: PenTool,
     color: 'text-fuchsia-500',
     bg: 'bg-fuchsia-50',
-    shortName: 'ศิลปะ'
+    shortName: 'ศิลปะ',
+    credits: 1.0
   },
   { 
     id: 'OC101', 
@@ -131,7 +142,8 @@ export const GRADE_DATA = [
     icon: Briefcase,
     color: 'text-stone-600',
     bg: 'bg-stone-50',
-    shortName: 'การงาน'
+    shortName: 'การงาน',
+    credits: 1.0
   },
   { 
     id: 'EN101', 
@@ -142,7 +154,8 @@ export const GRADE_DATA = [
     icon: Globe,
     color: 'text-pink-500',
     bg: 'bg-pink-50',
-    shortName: 'อังกฤษ'
+    shortName: 'อังกฤษ',
+    credits: 1.5
   },
   { 
     id: 'EN102', 
@@ -153,6 +166,7 @@ export const GRADE_DATA = [
     icon: Globe,
     color: 'text-pink-600',
     bg: 'bg-pink-100',
-    shortName: 'อ.เพิ่ม'
+    shortName: 'อ.เพิ่ม',
+    credits: 1.0
   },
 ];
