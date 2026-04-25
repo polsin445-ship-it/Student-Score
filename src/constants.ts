@@ -1,0 +1,158 @@
+import { BookOpen, Sigma, Beaker, Globe, Computer, Landmark, ShieldCheck, HeartPulse, PenTool, Briefcase } from 'lucide-react';
+
+export const GRADE_DATA = [
+  { 
+    id: 'TH101', 
+    name: 'ภาษาไทย', 
+    grade: '4', 
+    rawScore: 88, 
+    totalFull: 100,
+    icon: BookOpen,
+    color: 'text-orange-500',
+    bg: 'bg-orange-50',
+    shortName: 'ไทย'
+  },
+  { 
+    id: 'TH102', 
+    name: 'ภาษาไทยเพิ่มเติม', 
+    grade: '4', 
+    rawScore: 92, 
+    totalFull: 100,
+    icon: BookOpen,
+    color: 'text-orange-600',
+    bg: 'bg-orange-100',
+    shortName: 'ไทยเพิ่ม'
+  },
+  { 
+    id: 'MA101', 
+    name: 'คณิตศาสตร์', 
+    grade: '4', 
+    rawScore: 90, 
+    totalFull: 100,
+    icon: Sigma,
+    color: 'text-blue-500',
+    bg: 'bg-blue-50',
+    shortName: 'คณิต'
+  },
+  { 
+    id: 'SC101', 
+    name: 'วิทยาศาสตร์และเทคโนโลยี', 
+    grade: '3.5', 
+    rawScore: 78, 
+    totalFull: 100,
+    icon: Beaker,
+    color: 'text-purple-500',
+    bg: 'bg-purple-50',
+    shortName: 'วิทย์'
+  },
+  { 
+    id: 'COM101', 
+    name: 'คอมพิวเตอร์', 
+    grade: '4', 
+    rawScore: 95, 
+    totalFull: 100,
+    icon: Computer,
+    color: 'text-indigo-500',
+    bg: 'bg-indigo-50',
+    shortName: 'คอม'
+  },
+  { 
+    id: 'SO101', 
+    name: 'สังคมศึกษา ศาสนา และวัฒนธรรม', 
+    grade: '3.5', 
+    rawScore: 76, 
+    totalFull: 100,
+    icon: Globe,
+    color: 'text-emerald-500',
+    bg: 'bg-emerald-50',
+    shortName: 'สังคม'
+  },
+  { 
+    id: 'HI101', 
+    name: 'ประวัติศาสตร์', 
+    grade: '4', 
+    rawScore: 85, 
+    totalFull: 100,
+    icon: Landmark,
+    color: 'text-amber-600',
+    bg: 'bg-amber-50',
+    shortName: 'ประวัติ'
+  },
+  { 
+    id: 'AC101', 
+    name: 'การป้องกันการต้านทุจริต', 
+    grade: '4', 
+    rawScore: 98, 
+    totalFull: 100,
+    icon: ShieldCheck,
+    color: 'text-red-500',
+    bg: 'bg-red-50',
+    shortName: 'ต้านทุจริต'
+  },
+  { 
+    id: 'CI101', 
+    name: 'หน้าที่พลเมือง', 
+    grade: '4', 
+    rawScore: 94, 
+    totalFull: 100,
+    icon: ShieldCheck,
+    color: 'text-blue-600',
+    bg: 'bg-blue-100',
+    shortName: 'พลเมือง'
+  },
+  { 
+    id: 'HE101', 
+    name: 'สุขศึกษาและพลศึกษา', 
+    grade: '4', 
+    rawScore: 96, 
+    totalFull: 100,
+    icon: HeartPulse,
+    color: 'text-rose-500',
+    bg: 'bg-rose-50',
+    shortName: 'สุขศึกษา'
+  },
+  { 
+    id: 'AR101', 
+    name: 'ศิลปะ', 
+    grade: '3.5', 
+    rawScore: 79, 
+    totalFull: 100,
+    icon: PenTool,
+    color: 'text-fuchsia-500',
+    bg: 'bg-fuchsia-50',
+    shortName: 'ศิลปะ'
+  },
+  { 
+    id: 'OC101', 
+    name: 'การงานอาชีพ', 
+    grade: '4', 
+    rawScore: 92, 
+    totalFull: 100,
+    icon: Briefcase,
+    color: 'text-stone-600',
+    bg: 'bg-stone-50',
+    shortName: 'การงาน'
+  },
+  { 
+    id: 'EN101', 
+    name: 'ภาษาอังกฤษ', 
+    grade: '4', 
+    rawScore: 95, 
+    totalFull: 100,
+    icon: Globe,
+    color: 'text-pink-500',
+    bg: 'bg-pink-50',
+    shortName: 'อังกฤษ'
+  },
+  { 
+    id: 'EN102', 
+    name: 'ภาษาอังกฤษเพิ่มเติม', 
+    grade: '3.5', 
+    rawScore: 77, 
+    totalFull: 100,
+    icon: Globe,
+    color: 'text-pink-600',
+    bg: 'bg-pink-100',
+    shortName: 'อ.เพิ่ม'
+  },
+];

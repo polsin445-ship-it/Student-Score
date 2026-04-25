@@ -1,21 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Sparkles, Sigma, Beaker, Globe, BellRing, ChevronRight } from 'lucide-react';
-import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis, Tooltip, Cell } from 'recharts';
+import { Sparkles, BellRing, ChevronRight } from 'lucide-react';
+import { BarChart, Bar, ResponsiveContainer, XAxis, Tooltip, Cell } from 'recharts';
+import { GRADE_DATA } from '../constants';
 
-const data = [
-  { name: 'คณิต', score: 90 },
-  { name: 'วิทย์', score: 75 },
-  { name: 'ไทย', score: 95 },
-  { name: 'อังกฤษ', score: 80 },
-  { name: 'สังคม', score: 88 },
-];
+const chartData = GRADE_DATA.map(item => ({
+  name: item.shortName,
+  score: item.rawScore
+}));
 
-const subjects = [
-  { id: 'ค32101', name: 'คณิตศาสตร์เพิ่มเติม', score: '4', icon: Sigma },
-  { id: 'ว32201', name: 'ฟิสิกส์พื้นฐาน', score: '3.5', icon: Beaker },
-  { id: 'อ32101', name: 'ภาษาอังกฤษ', score: '4', icon: Globe },
-];
+const displaySubjects = GRADE_DATA.slice(0, 3);
 
 export default function HomeScreen() {
   return (
@@ -70,19 +64,19 @@ export default function HomeScreen() {
           </div>
           <div className="h-48 w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data}>
+              <BarChart data={chartData}>
                 <XAxis 
                   dataKey="name" 
                   axisLine={false} 
                   tickLine={false} 
-                  tick={{ fill: '#837375', fontSize: 12, fontWeight: 600 }}
+                  tick={{ fill: '#837375', fontSize: 10, fontWeight: 600 }}
                 />
                 <Tooltip 
                   cursor={{ fill: '#ffc0cb33' }}
                   contentStyle={{ borderRadius: '16px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}
                 />
                 <Bar dataKey="score" radius={[12, 12, 0, 0]}>
-                  {data.map((entry, index) => (
+                  {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill="#ffb6c1" />
                   ))}
                 </Bar>
@@ -101,7 +95,7 @@ export default function HomeScreen() {
             </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {subjects.map((sub, idx) => (
+            {displaySubjects.map((sub, idx) => (
               <motion.div
                 key={sub.id}
                 initial={{ opacity: 0, x: -10 }}
@@ -120,7 +114,7 @@ export default function HomeScreen() {
                   <p className="text-xs font-semibold text-outline">รหัสวิชา {sub.id}</p>
                 </div>
                 <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold font-display">
-                  {sub.score}
+                  {sub.grade}
                 </div>
               </motion.div>
             ))}

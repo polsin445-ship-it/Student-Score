@@ -1,65 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sigma, Beaker, Globe, BookOpen, Calculator, ChevronRight, ChevronDown } from 'lucide-react';
+import { Sigma, ChevronDown } from 'lucide-react';
 import { cn } from '../lib/utils';
-
-const gradeData = [
-  { 
-    id: 'ค32101', 
-    name: 'คณิตศาสตร์เพิ่มเติม', 
-    grade: '4', 
-    rawScore: 92, 
-    totalFull: 100,
-    icon: Sigma,
-    color: 'text-blue-500',
-    bg: 'bg-blue-50',
-    breakdown: { midterm: 28, final: 34, homework: 30 }
-  },
-  { 
-    id: 'ว32201', 
-    name: 'ฟิสิกส์พื้นฐาน', 
-    grade: '3.5', 
-    rawScore: 78, 
-    totalFull: 100,
-    icon: Beaker,
-    color: 'text-purple-500',
-    bg: 'bg-purple-50',
-    breakdown: { midterm: 22, final: 28, homework: 28 }
-  },
-  { 
-    id: 'อ32101', 
-    name: 'ภาษาอังกฤษ', 
-    grade: '4', 
-    rawScore: 95, 
-    totalFull: 100,
-    icon: Globe,
-    color: 'text-pink-500',
-    bg: 'bg-pink-50',
-    breakdown: { midterm: 29, final: 36, homework: 30 }
-  },
-  { 
-    id: 'ท32101', 
-    name: 'ภาษาไทย', 
-    grade: '4', 
-    rawScore: 88, 
-    totalFull: 100,
-    icon: BookOpen,
-    color: 'text-orange-500',
-    bg: 'bg-orange-50',
-    breakdown: { midterm: 26, final: 32, homework: 30 }
-  },
-  { 
-    id: 'ส32101', 
-    name: 'สังคมศึกษา', 
-    grade: '3.5', 
-    rawScore: 76, 
-    totalFull: 100,
-    icon: Calculator,
-    color: 'text-emerald-500',
-    bg: 'bg-emerald-50',
-    breakdown: { midterm: 20, final: 26, homework: 30 }
-  },
-];
+import { GRADE_DATA as gradeData } from '../constants';
 
 export default function GradesScreen() {
   const [selectedId, setSelectedId] = useState(gradeData[0].id);
