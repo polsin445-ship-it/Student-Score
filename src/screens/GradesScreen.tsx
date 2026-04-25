@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sigma, ChevronDown } from 'lucide-react';
+import { Sigma, ChevronDown, ChevronRight } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { GRADE_DATA as gradeData } from '../constants';
 
