@@ -23,7 +23,7 @@ export const GRADE_DATA = [
     color: 'text-orange-600',
     bg: 'bg-orange-100',
     shortName: 'ไทยเพิ่ม',
-    credits: 1.0
+    credits: 0.5
   },
   { 
     id: 'MA101', 
@@ -59,7 +59,7 @@ export const GRADE_DATA = [
     color: 'text-indigo-500',
     bg: 'bg-indigo-50',
     shortName: 'คอม',
-    credits: 1.0
+    credits: 0.5
   },
   { 
     id: 'SO101', 
@@ -167,6 +167,6 @@ export const GRADE_DATA = [
     color: 'text-pink-600',
     bg: 'bg-pink-100',
     shortName: 'อ.เพิ่ม',
-    credits: 1.0
+    credits: 0.5
   },
 ];
